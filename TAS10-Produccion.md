@@ -38,6 +38,22 @@ La contenerización permite a los desarrolladores crear e implementar aplicacion
 <img src="./front/con1.jpeg" alt="contenedor react docker" width="500"/>
 
 
+### Nginx
+
+Es un servidor web de código abierto que, desde su éxito inicial como servidor web, ahora también es usado como proxy inverso, cache de HTTP, y balanceador de carga.Nginx está diseñado para ofrecer un bajo uso de memoria y alta concurrencia. En lugar de crear nuevos procesos para cada solicitud web, Nginx usa un enfoque asincrónico basado en eventos donde las solicitudes se manejan en un solo hilo. Con Nginx, un proceso maestro puede controlar múltiples procesos de trabajo. El proceso maestro mantiene los procesos de trabajo, y son estos lo que hacen el procesamiento real.
+
+Algunas características comunes que se ven en Nginx incluyen:
+
+Proxy inverso con caché
+IPv6
+Balanceo de carga
+Soporte FastCGI con almacenamiento en caché
+Websockets
+Manejo de archivos estáticos, archivos de índice y auto indexación
+TLS / SSL con SNI
+
+
+<img src="./front/con1.jpeg" alt="contenedor react docker" width="500"/>
 
 ## 4. Conocimientos previos
 
