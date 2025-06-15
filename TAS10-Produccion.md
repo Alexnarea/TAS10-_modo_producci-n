@@ -81,32 +81,37 @@ El estudiante debe conocer:
 
 1. Crear el Dockerfile para el backend.
 
-Figura 8-1 Creacion del Dockerfile en spring boot.
+Figura 8-1 Creación del Dockerfile para el backend.
 
-<img src="./front/dfb.PNG" alt="contenedor react docker" width="500"/>
+<img src="./front/dfb.PNG" alt="Dockerfile backend" width="500"/>
 
-2.  Crear el Dockerfile para el frontend.
 
-Figura 8-2 Creacion del Dockerfile en React.
+2. Crear el Dockerfile para el frontend con multi-stage build (Node.js + Nginx).
 
-<img src="./front/dff.PNG" alt="contenedor react docker" width="500"/>
+Figura 8-2 Creación del Dockerfile para el frontend React.
 
-3.Crear el archivo .env.
+<img src="./front/dff.PNG" alt="Dockerfile frontend" width="500"/>
 
-Figura 8-3 Creacion del archivo .env para variables de entorno .
 
-<img src="./front/en.PNG" alt="contenedor react docker" width="500"/>
+3. Crear el archivo .env para definir variables de entorno.
 
-4. Crear el archivo docker-compose.yml para orquestar los contenedores.
+Figura 8-3 Creación del archivo .env para variables de entorno.
 
-Figura 8-4 Estructura de docker-compose.
+<img src="./front/en.PNG" alt="Archivo .env" width="500"/>
 
-<img src="./front/dc.PNG" alt="contenedor react docker" width="500"/>
 
-5. Ejecutar los contenedores 
-Figura 8-5 Ejecucion de los contenedores.
+4. Crear el archivo docker-compose.yml para orquestar los contenedores frontend, backend y base de datos.
 
-<img src="./front/r1.PNG" alt="contenedor react docker" width="500"/>
+Figura 8-4 Estructura del archivo docker-compose.yml.
+
+<img src="./front/dc.PNG" alt="docker-compose.yml" width="500"/>
+
+
+5. Ejecutar los contenedores con docker-compose up -d.
+
+Figura 8-5 Ejecución de los contenedores y verificación.
+
+<img src="./front/r1.PNG" alt="Ejecución contenedores" width="500"/>
 
 
 ## 9. Resultados esperados
