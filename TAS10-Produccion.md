@@ -132,17 +132,17 @@ Figura 8-5 Ejecución de los contenedores y verificación.
 
 ## 9. Resultados esperados
 
-Al finalizar la práctica, se cumplieron exitosamente todos los objetivos planteados. La aplicación completa, compuesta por un frontend desarrollado en React y un backend en Spring Boot, fue contenerizada mediante Docker. Los servicios se orquestaron mediante un archivo docker-compose.yml, permitiendo el despliegue conjunto del frontend y backend como contenedores independientes. La base de datos fue gestionada externamente mediante Neon, una plataforma de PostgreSQL en la nube, eliminando la necesidad de levantar un contenedor local de base de datos o herramientas como pgAdmin.
+Al finalizar la práctica, se cumplieron exitosamente todos los objetivos planteados. La aplicación fue desplegada en un entorno de producción, con una arquitectura contenerizada compuesta por:
 
-Durante el proceso se logró:
+- Un frontend desarrollado en React, construido en una imagen de Node.js y servido en producción mediante un contenedor con Nginx.
+- Un backend en Spring Boot, contenerizado de forma independiente.
+- Una base de datos PostgreSQL levantada en un contenedor dedicado.
+- Un contenedor de pgAdmin para la gestión visual de la base de datos.
+- Un archivo docker-compose.yml que orquestó todos los servicios de forma unificada.
+- Un archivo .env que centralizó la configuración de variables sensibles del entorno.
 
-- La conexión correcta entre el backend y la base de datos remota en Neon, verificada mediante los logs de Spring Boot.
-- La ejecución automática de migraciones mediante Flyway al iniciar el backend, confirmando que la base de datos fue inicializada correctamente en Neon.
-- La exposición de puertos y ejecución en segundo plano usando docker compose up -d, lo cual permitió el acceso a la API en el puerto 8082 y al frontend en el puerto 5173.
-- La visualización en el frontend de una tabla con datos consumidos desde la API REST del backend, validando la comunicación entre ambos contenedores.
-- La configuración centralizada mediante un archivo .env, lo cual facilitó la gestión de variables sensibles como las credenciales de la base de datos y las URLs de conexión.
-Todo el proceso fue documentado y acompañado de evidencias, desde la construcción de imágenes hasta la correcta visualización de los datos en el navegador, demostrando el despliegue completo de una aplicación web distribuida y contenerizada.
-
+Todo el proceso fue documentado mediante capturas de pantalla y archivos de configuración, evidenciando la correcta construcción de las imágenes, el despliegue coordinado de los servicios y el acceso exitoso a la aplicación desde el navegador en un entorno que simula producción real.
+  
 
 <img src="./tas10/r1.PNG" alt="contenedor react docker" width="500"/>
 
